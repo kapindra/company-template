@@ -1,0 +1,11 @@
+@import "abstract/mixin", "abstract/variables";
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "base/header", "base/base", "base/footer";
+
+@import "components/button", "components/card", "components/forms",
+  "components/modal", "components/table";
+
+@import "pages/index";

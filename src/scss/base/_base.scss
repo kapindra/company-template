@@ -1,0 +1,15 @@
+// FOR THE COMMON CSS THROUGHOUT THE PROJECT
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.html,
+body {
+    font-size: $base-font;
+    color: $base-font-color;
+    font-weight: $font-normal;
+    font-family: $font-family;
+    overflow-x: hidden;
+}
