@@ -1,6 +1,13 @@
+header {
+  position: relative;
+}
 .custom-navbar {
   padding-top: 36px;
   padding-bottom: 36px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
   &.navbar-light {
     .navbar-nav {
       gap: 36px;
@@ -11,6 +18,12 @@
         font-size: 14px;
         color: $text-color;
       }
+    }
+  }
+  &__logo {
+    height: 32px;
+    @include media-breakpoint-up(md) {
+      height: 44px;
     }
   }
 }

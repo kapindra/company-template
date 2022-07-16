@@ -1,0 +1,34 @@
+.hero-section {
+  $self: &;
+  position: relative;
+  &__title {
+    max-width: 600px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      max-width: 885px;
+    }
+  }
+  &__image-box {
+    height: $hero-image-height;
+    padding-left: 32px;
+    margin-top: 40px;
+    @include media-breakpoint-up(sm) {
+      height: $hero-image-height-sm;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 60px;
+      height: $hero-image-height-lg;
+    }
+    @each $size-name in map-keys($container-max-widths) {
+      $size-value: map-get($container-max-widths, $size-name);
+      @include media-breakpoint-up($size-name) {
+        margin-left: calc((100vw - #{$size-value}) / 2);
+      }
+    }
+    #{$self}__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -15,6 +15,56 @@ body {
   background: $theme-background;
 }
 
+h1 {
+  font-size: 32px;
+  font-family: "Galaxie";
+  color: $theme-blue;
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 64px;
+  }
+}
+
+.section-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 16px);
+  height: 100%;
+  z-index: -1;
+
+  @each $size-name in map-keys($container-max-widths) {
+    $size-value: map-get($container-max-widths, $size-name);
+    @if $size-value > 720 {
+      @include media-breakpoint-up($size-name) {
+        width: calc(
+          100% -
+            ((100vw - #{$size-value}) / 4 + (#{$container-lg-padding-x} / 2))
+        );
+      }
+    } @else {
+      @include media-breakpoint-up($size-name) {
+        width: calc(
+          100% - ((100vw - #{$size-value}) / 4 + (#{$container-padding-x} / 2))
+        );
+      }
+    }
+  }
+
+  &--cut {
+    height: calc(100% - (#{$hero-image-height} / 2));
+    @include media-breakpoint-up(sm) {
+      height: calc(100% - (#{$hero-image-height-sm}/ 2));
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 60px;
+      height: calc(100% - (#{$hero-image-height-lg}/ 2));
+    }
+  }
+}
+
 .container {
   @include container($container-padding-x);
 }
