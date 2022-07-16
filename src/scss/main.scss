@@ -3,9 +3,9 @@
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import "base/header", "base/base", "base/footer";
+@import "base/font", "base/header", "base/base", "base/footer";
 
-@import "components/button", "components/card", "components/forms",
-  "components/modal", "components/table";
+@import "components/social-media", "components/header", "components/card",
+  "components/forms", "components/modal", "components/table";
 
 @import "pages/index";

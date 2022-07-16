@@ -2,14 +2,17 @@
 
 // base font
 $base-font: 16px;
-$base-font-color: #1A1311;
+$base-font-color: #1a1311;
 
+// Colors
+$theme-background: #f2efee;
+$text-color: #3c3c3c;
 
 // Buttons
-$btn-primary: #439A46;
-$btn-secondary: #B8B8B8;
+$btn-primary: #439a46;
+$btn-secondary: #b8b8b8;
 $base-green: #008129;
-$btn-primary-light: #E8F5E9;
+$btn-primary-light: #e8f5e9;
 
 // font weights
 $font-normal: 400;
@@ -18,5 +21,10 @@ $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
 
+// Container
+$container-padding-x: 32px;
+$container-md-padding-x: 80px;
+$container-lg-padding-x: 60px;
+
 // font-family
-$font-family: 'Noto Sans JP', sans-serif;
+$font-family: "Inter";

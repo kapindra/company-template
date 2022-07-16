@@ -1,15 +1,26 @@
 // FOR THE COMMON CSS THROUGHOUT THE PROJECT
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .html,
 body {
-    font-size: $base-font;
-    color: $base-font-color;
-    font-weight: $font-normal;
-    font-family: $font-family;
-    overflow-x: hidden;
+  font-size: $base-font;
+  color: $base-font-color;
+  font-weight: $font-normal;
+  font-family: $font-family;
+  overflow-x: hidden;
+  background: $theme-background;
+}
+
+.container {
+  @include container($container-padding-x);
+}
+
+.container-lg {
+  @include media-breakpoint-up(lg) {
+    @include container($container-lg-padding-x);
+  }
 }

@@ -1,0 +1,16 @@
+.custom-navbar {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  &.navbar-light {
+    .navbar-nav {
+      gap: 36px;
+      @include media-breakpoint-up(xl) {
+        gap: 60px;
+      }
+      .nav-link {
+        font-size: 14px;
+        color: $text-color;
+      }
+    }
+  }
+}
