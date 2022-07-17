@@ -35,12 +35,17 @@ h2 {
 }
 
 .section-bg {
+  $self: &;
   position: absolute;
   top: 0;
   right: 0;
   width: calc(100% - 16px);
   height: 100%;
   z-index: -1;
+
+  &--left {
+    left: 0;
+  }
 
   @each $size-name in map-keys($container-max-widths) {
     $size-value: map-get($container-max-widths, $size-name);
@@ -68,6 +73,45 @@ h2 {
     @include media-breakpoint-up(lg) {
       padding-left: 60px;
       height: calc(100% - (#{$hero-image-height-lg}/ 2));
+    }
+  }
+
+  &__image-box {
+    height: $hero-image-height;
+    padding-left: 32px;
+    margin-top: 40px;
+    @include media-breakpoint-up(sm) {
+      height: $hero-image-height-sm;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 60px;
+      height: $hero-image-height-lg;
+    }
+    @each $size-name in map-keys($container-max-widths) {
+      $size-value: map-get($container-max-widths, $size-name);
+      @include media-breakpoint-up($size-name) {
+        margin-left: calc((100vw - #{$size-value}) / 2);
+      }
+    }
+    #{$self}__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--left {
+      padding-right: 32px;
+      padding-left: 0;
+      margin-left: 0;
+      @include media-breakpoint-up(lg) {
+        padding-right: 60px;
+      }
+      @each $size-name in map-keys($container-max-widths) {
+        $size-value: map-get($container-max-widths, $size-name);
+        @include media-breakpoint-up($size-name) {
+          margin-right: calc((100vw - #{$size-value}) / 2);
+        }
+      }
     }
   }
 }
