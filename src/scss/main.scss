@@ -3,9 +3,11 @@
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@import "../../node_modules/slick-carousel/slick/slick.css";
+
 @import "base/font", "base/header", "base/base", "base/footer";
 
 @import "components/button", "components/social-media", "components/header",
-  "components/hero";
+  "components/hero", "components/news";
 
 @import "pages/index";

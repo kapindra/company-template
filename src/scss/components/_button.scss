@@ -1,12 +1,47 @@
 .btn {
   $self: &;
-  @include button($theme-mid-gray, $button-text, 0);
+  @include button($theme-mid-gray, 0);
   width: max-content;
+  font-size: $button-text;
   height: 40px;
   align-items: center;
   @include media-breakpoint-up(md) {
     height: 64px;
     margin-bottom: 16px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $button-text-lg;
+  }
+  &--underlined {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $theme-mid-gray;
+    margin-top: 24px;
+    @include media-breakpoint-up(md) {
+      height: 54px;
+    }
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      top: -184px;
+    }
+    .btn__icon-box {
+      border-left: none;
+    }
+    .btn__text {
+      padding: 14px 0;
+    }
+    .btn__icon-box {
+      padding: 14px 8px 14px 14px;
+      @include media-breakpoint-up(md) {
+        height: 54px;
+      }
+    }
+    .btn__icon {
+      margin-top: 2px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+    }
   }
   &__text {
     padding: 12px;
