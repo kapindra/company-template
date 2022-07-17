@@ -50,6 +50,10 @@ a {
   }
 }
 
+figcaption {
+  color: $text-dim;
+}
+
 .section-bg {
   $self: &;
   position: absolute;
