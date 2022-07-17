@@ -1,0 +1,46 @@
+.beneficiaries {
+  padding-top: 24px;
+  padding-bottom: 68px;
+  @include media-breakpoint-up(md) {
+    padding-top: 60px;
+    padding-bottom: 96px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    padding-bottom: 192px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+  }
+  &__card {
+    width: 202px;
+    margin-right: 16px;
+    @include media-breakpoint-up(md) {
+      width: 255px;
+      margin-right: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: 60px;
+    }
+  }
+  &__image-box {
+    width: 100%;
+    height: 269px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: "Galaxie";
+    margin-top: 12px;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+    }
+  }
+}

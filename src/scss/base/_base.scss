@@ -32,6 +32,9 @@ h2 {
   font-size: 14px;
   font-family: "Inter";
   font-weight: bold;
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
 }
 
 .section-bg {

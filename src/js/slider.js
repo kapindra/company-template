@@ -26,3 +26,12 @@ $('.news-cards').slick({
     }
   ]
 });
+
+$('.beneficiaries__cards').slick({
+  infinite: true,
+  arrows: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  mobileFirst: true,
+  variableWidth: true,
+});
