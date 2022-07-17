@@ -37,6 +37,19 @@ h2 {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+.article-links {
+  a {
+    color: initial;
+    &:hover {
+      color: $theme-blue;
+    }
+  }
+}
+
 .section-bg {
   $self: &;
   position: absolute;
