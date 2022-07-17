@@ -6,7 +6,8 @@
   z-index: 3;
   background-color: $theme-blue;
   &__links {
-    padding: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     margin-top: 148px;
     a {
       color: #fff;
