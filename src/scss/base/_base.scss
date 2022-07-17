@@ -54,6 +54,11 @@ figcaption {
   color: $text-dim;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .section-bg {
   $self: &;
   position: absolute;
