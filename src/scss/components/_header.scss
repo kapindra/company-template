@@ -26,4 +26,8 @@ header {
       height: 44px;
     }
   }
+  &__main-header {
+    position: relative;
+    z-index: 4;
+  }
 }
