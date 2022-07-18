@@ -8,7 +8,7 @@ header {
     padding-top: 68px;
     padding-bottom: 68px;
   }
-  transition: 0.5s ease-in-out;
+  // transition: 0.5s ease-in-out;
   &--fixed {
     position: fixed;
     top: 0;
@@ -38,6 +38,13 @@ header {
         font-size: 14px;
         color: $text-color;
         cursor: pointer;
+        &:hover {
+          color: $theme-blue;
+        }
+
+        &.link-active {
+          color: $theme-blue;
+        }
       }
     }
   }

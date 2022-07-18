@@ -4,6 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 $(".desktop-nav").click(function () {
   $(".desktop-nav").removeClass("d-lg-block");
+  $(".scholarship-link").removeClass("link-active");
 })
 
 $(".desktop-nav__contents").click(function (e) {
@@ -21,4 +22,5 @@ ScrollTrigger.create({
 
 $(".scholarship-link").click(function () {
   $(".desktop-nav").toggleClass("d-lg-block");
+  $(".scholarship-link").addClass("link-active");
 })
