@@ -5,3 +5,8 @@ $(".navbar-toggler").click(function () {
   $("#hamburger").toggleClass("d-none");
   $("#close").toggleClass("d-none");
 });
+
+$(".scholarship-link").click(function () {
+  $(".custom-navbar").toggleClass("custom-navbar--fixed");
+  $(".desktop-nav").toggleClass("d-lg-block");
+})

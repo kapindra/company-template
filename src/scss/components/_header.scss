@@ -8,6 +8,20 @@ header {
     padding-top: 68px;
     padding-bottom: 68px;
   }
+  transition: 0.5s ease-in-out;
+  &--fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 6;
+    border-bottom: 1px solid $theme-mid-gray;
+    transition: 0.3s ease-in-out;
+    @include media-breakpoint-up(lg) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
   &.navbar-light {
     .navbar-nav {
       gap: 36px;

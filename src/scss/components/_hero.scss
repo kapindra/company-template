@@ -1,5 +1,6 @@
-.hero-section {  
+.hero-section {
   position: relative;
+  transition: 1s ease-in-out;
   &__title {
     max-width: 600px;
     margin-bottom: 20px;

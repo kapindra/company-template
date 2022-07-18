@@ -1,0 +1,44 @@
+.desktop-nav {
+  display: none;
+  position: fixed;
+  top: 119px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(116, 120, 138, 0.8);
+  z-index: 5;
+  &__contents {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
+  &__links {
+    max-width: 387px;
+    a {
+      font-size: 32px;
+      font-family: "Galaxie";
+      color: $theme-blue;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: block;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 1px;
+        background-color: $theme-mid-gray;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+main {
+  position: relative;
+}
