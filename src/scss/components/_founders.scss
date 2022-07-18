@@ -41,6 +41,7 @@
   &__card {
     position: relative;
     height: 175px;
+    background: gray;
 
     @include media-breakpoint-up(md) {
       height: 296px;
