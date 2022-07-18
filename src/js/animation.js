@@ -22,5 +22,5 @@ ScrollTrigger.create({
 
 $(".scholarship-link").click(function () {
   $(".desktop-nav").toggleClass("d-lg-block");
-  $(".scholarship-link").addClass("link-active");
+  $(".scholarship-link").toggleClass("link-active");
 })
