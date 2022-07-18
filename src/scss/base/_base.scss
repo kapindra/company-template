@@ -59,6 +59,12 @@ ul {
   list-style: none;
 }
 
+button {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
 .section-bg {
   $self: &;
   position: absolute;

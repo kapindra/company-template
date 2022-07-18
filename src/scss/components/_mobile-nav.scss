@@ -1,11 +1,17 @@
 .mobile-nav {
   position: fixed;
   top: 0;
+  left: -105%;
   width: 100vw;
   height: 100vh;
   overflow: auto;
   z-index: 8;
   background-color: $theme-blue;
+  transition: 1s ease-in-out;
+  &--transition {
+    left: 0;
+    transition: 1s ease-in-out;
+  }
   &__logo {
     padding-top: 35px;
     background-color: $theme-blue;
