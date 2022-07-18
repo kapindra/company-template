@@ -65,6 +65,10 @@
     font-size: 24px;
     font-family: "Galaxie";
     text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
     @include media-breakpoint-up(md) {
       font-size: 44px;
     }
