@@ -3,12 +3,18 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 3;
+  overflow: auto;
+  z-index: 8;
   background-color: $theme-blue;
+  &__logo {
+    padding-top: 35px;
+    background-color: $theme-blue;
+    position: sticky;
+    top: 0;
+  }
   &__links {
-    padding-top: 32px;
     padding-bottom: 32px;
-    margin-top: 148px;
+    margin-top: 56px;
     a {
       color: #fff;
       font-size: 12px;

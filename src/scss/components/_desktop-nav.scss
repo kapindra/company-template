@@ -1,15 +1,19 @@
 .desktop-nav {
   display: none;
   position: fixed;
-  top: 119px;
+  // top: 119px;
+  top: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(116, 120, 138, 0.8);
-  z-index: 5;
+  z-index: 6;
+  transition: 0.5s ease-in-out;
   &__contents {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #fff;
+    position: relative;
+    top: 119px;
   }
   &__links {
     max-width: 387px;

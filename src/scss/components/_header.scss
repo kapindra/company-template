@@ -22,6 +22,12 @@ header {
       padding-bottom: 32px;
     }
   }
+  &--fixed-mobile {
+    position: fixed;
+    top: 64px;
+    z-index: 5;
+    width: 100%;
+  }
   &.navbar-light {
     .navbar-nav {
       gap: 36px;
@@ -31,6 +37,7 @@ header {
       .nav-link {
         font-size: 14px;
         color: $text-color;
+        cursor: pointer;
       }
     }
   }
