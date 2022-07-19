@@ -13,7 +13,7 @@ npm i
 Build:
 
 ```bash
-npm run dist
+npm run build
 ```
 
 Server start (open a new browser window):
